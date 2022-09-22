@@ -1,0 +1,62 @@
+{
+    "name": {
+        "as" : "FormInput",
+        "type": "text",
+        "default": null,
+        "placeholder" : "Name As PAN",
+        "floating" : "Name",
+        "rules" : "required|min:3",
+        "disabled": false,
+        "readonly": false,
+        "addon": {
+          "before": null,
+          "after": null
+        },
+        "helpText": null
+      },
+      "email": {
+        "as" : "FormInput",
+        "type": "email",
+        "default": null,
+        "placeholder" : "Email address",
+        "floating" : "Email address",
+        "rules" : "required|email",
+        "disabled": false,
+        "readonly": false,
+        "addon": {
+          "before": null,
+          "after": null
+        },
+        "helpText": null
+      },
+      "company": {
+        "as" : "FormInput",
+        "type": "text",
+        "default": null,
+        "placeholder" : "Company",
+        "floating" : "Company",
+        "rules" : "required|min:3",
+        "disabled": false,
+        "readonly": false,
+        "addon": {
+          "before": null,
+          "after": null
+        },
+        "helpText": null
+      },
+      "phone": {
+        "as" : "FormInput",
+        "type": "text",
+        "default": null,
+        "placeholder" : "Phone",
+        "floating" : "Phone",
+        "rules" : "required|max:10",
+        "disabled": false,
+        "readonly": false,
+        "addon": {
+          "before": "%",
+          "after": null
+        },
+        "helpText": null
+      }
+}

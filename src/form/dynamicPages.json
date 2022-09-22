@@ -1,0 +1,106 @@
+{
+	"config": {
+		"name": "Combine",
+		"version": "1.0.0",
+		"base_url": "https://apple.com/"	
+	},	
+	"pages" : [
+		{
+			"id": "67c773a9-eccf-4d2d-8de0-f3392124b393",
+			"style": {
+				"layout": "flex flex-col bg-blue-100 items-start",
+				"width": "w-full"
+			},
+			"bg": {
+				"as": "image",
+				"id": "7d14412c-b187-4aa5-8c76-2d9857884366"
+			},
+			"navigation": {
+				"title": "POI Page",
+				"style": {
+					"px-4 py-2 bg-blue-700 text-white text-sm flex flex-row items-center": true,
+					"h-[200px]": true,
+					"w-full": true
+				},
+				"inline": "h-[200px] w-full px-4 py-2 bg-blue-700 text-white text-sm flex flex-row items-center",
+				"subtitle": "Upload Proof of identities",
+				"actions": {
+					"left": [
+						{
+							"as": "icon",
+							"id": "ecdf068f-09be-4625-a1a8-268326af1555",
+							"type": "back"
+						},
+						{
+							"as": "text",
+							"title": "Save",
+							"id": "ecdf068f-09be-4625-a1a8-268326af1556",
+							"type": "back"
+						}
+					]
+				}
+			},
+			"sections": [
+				{
+					"id": "41bdfe5b-a48f-4eb1-8811-8e7b229613b1",
+					"layout": null,
+					"bg": null,
+					"title": "Upload Identities",
+					"subtitle": null,
+					"fields": {
+						"note": {
+							"as": "static",
+							"content": "<span>I am good. Go ahead</span>",
+							"type": "html"
+						},
+					    "name": {
+					    	"id": "41bdfe5b-a48f-4eb1-8811-8e7b229613b2",
+					    	"style": null,
+					        "as" : "FormInput",
+					        "type": "text",
+					        "default": null,
+					        "placeholder" : "Name",
+					        "floating" : "Name",
+					        "rules" : "required",
+					        "regex": "[A-Z]{5}[0-9]{4}[A-Z]{1}",
+					        "disabled": false,
+					        "readonly": false,
+					        "addon": {
+					          "before": null,
+					          "after": null
+					        },
+					        "helpText": null
+					    }
+					}
+				}
+			],
+			"actions": {
+				"id": "41bdfe5b-a48f-4eb1-8811-8e7b229614b1",
+				"layout": "",
+				"items": [
+			        {
+			            "id": "41bdfe6b-a48f-4eb1-8811-8e7b229613b1",
+			            "as" : "button",
+			            "style": "",
+			            "type" :"submit",
+			            "method" : "POST",
+			            "action": "/api/stage/1"
+			        },
+			        {
+			            "id": "42bdfe5b-a48f-4eb1-8811-8e7b229613b1",
+			            "as" : "button",
+			            "style": "",
+			            "type" :"reset",
+			            "method" : null,
+			            "action": null
+			        }
+			    ]
+			}
+		}
+	],
+	"assets": {
+		"7d14412c-b187-4aa5-8c76-2d9857884366": "~/assets/img/bg.jpeg",
+		"ecdf068f-09be-4625-a1a8-268326af1555": "~/assets/img/back.svg"
+	}
+
+}
