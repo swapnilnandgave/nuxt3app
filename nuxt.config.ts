@@ -17,6 +17,6 @@ export default defineNuxtConfig({
         viewer: true,
     },
     app: {
-        baseURL: "./",
+        baseURL: "/somepath",
     }
 })
